@@ -1,270 +1,347 @@
-🚀 LLM-Bench-AI
-AI-Powered Large Language Model Benchmarking & Recommendation System
+# 🚀 IntelliBench-LLM
 
-An intelligent Machine Learning system that predicts the inference performance of Large Language Models (LLMs) on different hardware configurations and recommends the most suitable model based on available system resources.
+<div align="center">
 
-Unlike traditional benchmarking tools that rely solely on real-time execution, LLM-Bench-AI combines hardware analysis, ML prediction, benchmark testing, and intelligent recommendation into a single application.
+### AI-Powered Large Language Model Benchmarking & Performance Prediction Platform
 
-Project Preview
-System Scan
-      │
-      ▼
-Hardware Features
-      │
-      ▼
-Machine Learning Model
-      │
-      ├───────────────┐
-      ▼               ▼
-Performance      Best LLM
-Prediction      Recommendation
-      │
-      ▼
-Benchmark Results
-Features
-Hardware Detection
-Automatic CPU Detection
-RAM Analysis
-GPU Memory Detection
-Storage Information
-Operating System Detection
-Machine Learning Prediction
+Predict • Benchmark • Recommend • Analyze
 
-Predicts
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-F7931E?style=for-the-badge\&logo=scikitlearn\&logoColor=white)
+![PySide6](https://img.shields.io/badge/PySide6-Desktop-41CD52?style=for-the-badge\&logo=qt\&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-success?style=for-the-badge)
 
-Expected Tokens/Second
-Estimated Latency
-Expected Memory Usage
-Overall Performance Score
-Intelligent Recommendation Engine
+</div>
 
-Recommends
+---
 
-TinyLlama
-Phi-3
-Gemma
-Llama 3
-Mistral
-DeepSeek
-Qwen
+# 📖 Overview
 
-Based on
+**IntelliBench-LLM** is a Machine Learning-powered benchmarking platform that predicts the performance of Large Language Models (LLMs) using hardware specifications instead of requiring every model to be executed.
 
-Available RAM
-CPU Performance
-GPU VRAM
-Storage
-Benchmark Module
+The project integrates **Hardware Analysis**, **Machine Learning**, **Benchmark Testing**, and an **Intelligent Recommendation Engine** into a unified desktop application, enabling users to estimate model performance efficiently.
 
-Measures
+---
 
-Inference Speed
-Execution Time
-Resource Utilization
-Memory Consumption
-Dataset Generation
+# 🎯 Objectives
 
-Synthetic dataset generator for
+* Predict LLM performance using Machine Learning.
+* Analyze hardware capabilities automatically.
+* Recommend the most suitable LLM.
+* Reduce benchmarking time.
+* Visualize system performance.
+* Provide an easy-to-use desktop interface.
 
-Hardware Specs
-↓
+---
 
-Performance Labels
-↓
+# ✨ Key Features
 
-Training Dataset
-ML Model Training
+### 🖥️ Hardware Analysis
 
-Includes
+* CPU Detection
+* RAM Detection
+* GPU Detection
+* VRAM Detection
+* Storage Information
+* Operating System Detection
 
-Classification Model
-Regression Model
-Feature Engineering
-Data Preprocessing
-Model Serialization
-Desktop GUI
+---
 
-Built using
+### 🤖 Machine Learning Prediction
 
-PySide6
-Modern Interface
-Multi-page Navigation
-Interactive Results
-Machine Learning Workflow
-Dataset
-      │
-      ▼
-Cleaning
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Train/Test Split
-      │
-      ▼
-Regression Model
-      │
-      ▼
-Performance Prediction
+Predicts:
 
-----------------------------
+* Performance Score
+* Tokens per Second
+* Expected Latency
+* Memory Usage
+* Compatibility Rating
 
-Dataset
-      │
-      ▼
-Classification
-      │
-      ▼
-Best LLM Recommendation
-ML Algorithms
+---
 
-Current implementation
+### 🧠 Intelligent Recommendation Engine
 
-✅ Random Forest Regressor
+Recommends the best LLM according to:
 
-✅ Random Forest Classifier
+* CPU Performance
+* RAM
+* GPU VRAM
+* Storage
+* Benchmark Score
 
-Future Improvements
+Supports models such as:
 
-XGBoost
-LightGBM
-CatBoost
-Neural Networks
-Tech Stack
-Machine Learning
-Python
-Scikit-Learn
-NumPy
-Pandas
-Joblib
-Desktop
-PySide6
-Data
-JSON
-CSV
-Visualization
-Matplotlib (Future)
-Folder Structure
-LLM-Bench-AI
+* Llama 3
+* Mistral
+* Gemma
+* Phi-3
+* TinyLlama
+* DeepSeek
+* Qwen
 
+---
+
+### 📊 Benchmark Module
+
+* Inference Time
+* CPU Usage
+* Memory Usage
+* Response Speed
+* Performance Rating
+
+---
+
+### 📂 Dataset Generation
+
+Generate datasets containing:
+
+* Hardware Features
+* Performance Metrics
+* Model Labels
+
+Used for training predictive ML models.
+
+---
+
+### 📈 Machine Learning Pipeline
+
+* Data Collection
+* Data Cleaning
+* Feature Engineering
+* Model Training
+* Model Evaluation
+* Performance Prediction
+* Recommendation
+
+---
+
+# 🧠 Architecture
+
+```text
+            Hardware Scan
+                   │
+                   ▼
+         Feature Extraction
+                   │
+                   ▼
+            ML Prediction
+          ┌────────┴────────┐
+          ▼                 ▼
+Performance Score     LLM Recommendation
+          │                 │
+          └────────┬────────┘
+                   ▼
+          Benchmark Dashboard
+```
+
+---
+
+# 📁 Project Structure
+
+```text
+IntelliBench-LLM
 │
 ├── benchmark/
-│      inference_test.py
 │
-├── data/
-│      models_db.json
+├── datasets/
+│   ├── raw/
+│   └── processed/
 │
 ├── ml/
-│      train.py
-│      predictor.py
-│      generate_dataset.py
-│      dataset.csv
+│   ├── train.py
+│   ├── predictor.py
+│   ├── preprocessing.py
+│   └── dataset_generator.py
 │
 ├── models/
-│      classifier.pkl
-│      regressor.pkl
-│      meta.pkl
+│   ├── classifier.pkl
+│   ├── regressor.pkl
+│   └── metadata.pkl
 │
 ├── recommender/
-│      model_recommender.py
 │
 ├── scanner/
-│      system_scan.py
 │
 ├── ui/
-│      benchmark_page.py
-│      results_page.py
-│      scan_page.py
+│
+├── assets/
+│
+├── main.py
 │
 ├── requirements.txt
 │
-└── main.py
-Machine Learning Pipeline
-System Scan
+└── README.md
+```
 
-↓
+---
 
-Feature Extraction
+# 📊 Machine Learning Workflow
 
-↓
+```text
+Dataset
+    │
+    ▼
+Data Cleaning
+    │
+    ▼
+Feature Engineering
+    │
+    ▼
+Train/Test Split
+    │
+    ▼
+Random Forest Models
+    │
+    ▼
+Prediction
+    │
+    ▼
+Recommendation
+```
 
-Preprocessing
+---
 
-↓
+# 🛠 Tech Stack
 
-Regression Prediction
+### Programming Language
 
-↓
+* Python
 
-Classification
+### Machine Learning
 
-↓
+* Scikit-Learn
+* NumPy
+* Pandas
+* Joblib
 
-Model Recommendation
+### Desktop GUI
 
-↓
+* PySide6
 
-Benchmark Validation
-Future Scope
-Deep Learning Prediction
-GPU Benchmark Dataset
-Cloud Deployment
-Auto Dataset Collection
-Reinforcement Learning Recommendation
-LLM Fine-tuning Support
-Multi-GPU Support
-Cross-platform Benchmarking
-Research Applications
-AI Infrastructure Planning
-Hardware Compatibility Analysis
-Edge AI Deployment
-LLM Performance Prediction
-Educational ML Demonstrations
-Results
+### Data Storage
 
-The ML model predicts
+* CSV
+* JSON
 
-Performance Score
-Expected Inference Speed
-Memory Requirement
-Best LLM Selection
+### Version Control
 
-without running every model, significantly reducing benchmarking time.
+* Git
+* GitHub
 
-Installation
-git clone https://github.com/yourusername/LLM-Bench-AI.git
+---
 
-cd LLM-Bench-AI
+# 🚀 Installation
 
+Clone the repository
+
+```bash
+git clone https://github.com/raghavupadhyay308-svg/IntelliBench-LLM.git
+```
+
+Move into the project directory
+
+```bash
+cd IntelliBench-LLM
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+Run the application
+
+```bash
 python main.py
-Requirements
-Python 3.11+
+```
 
-PySide6
+---
 
-Scikit-Learn
+# 📊 Applications
 
-NumPy
+* LLM Performance Prediction
+* AI Hardware Planning
+* Benchmark Automation
+* Educational Demonstrations
+* Machine Learning Research
+* Performance Optimization
 
-Pandas
+---
 
-Joblib
-Author
+# 📈 Current ML Models
 
-Raghav Upadhyay
+| Model                    | Purpose                   |
+| ------------------------ | ------------------------- |
+| Random Forest Regressor  | Predict Performance Score |
+| Random Forest Classifier | Recommend Best LLM        |
 
-B.Tech Artificial Intelligence & Machine Learning
+---
 
-Graphic Era Hill University
+# 🔮 Future Improvements
 
-Resume Project Description
+* XGBoost Integration
+* CatBoost Models
+* Neural Networks
+* AutoML Pipeline
+* Live GPU Monitoring
+* Cloud Benchmarking
+* Docker Deployment
+* Web Dashboard
+* Multi-GPU Support
 
-LLM-Bench-AI | Machine Learning Performance Prediction System
+---
 
-Developed an AI-powered benchmarking system that predicts Large Language Model (LLM) inference performance using Machine Learning.
-Built regression and classification models to estimate execution speed, memory usage, and recommend optimal LLMs based on hardware specifications.
-Implemented automated hardware scanning, feature engineering, benchmark evaluation, and a PySide6 desktop interface for real-time predictions.
-Tech Stack: Python, Scikit-Learn, Pandas, NumPy, PySide6, Joblib, JSON.
+# 📚 Learning Outcomes
+
+This project demonstrates:
+
+* Machine Learning Pipeline Development
+* Feature Engineering
+* Regression & Classification
+* Model Evaluation
+* Desktop GUI Development
+* System Benchmarking
+* Data Processing
+* Software Engineering Best Practices
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push to your branch.
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+## Raghav Upadhyay
+
+**B.Tech – Artificial Intelligence & Machine Learning**
+
+Graphic Era Hill University, Dehradun
+
+**GitHub:** https://github.com/raghavupadhyay308-svg
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, please consider giving it a Star.
+
+**Built with ❤️ using Python, Machine Learning, and Artificial Intelligence.**
+
+</div>
